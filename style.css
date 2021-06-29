@@ -1,0 +1,130 @@
+
+.wrapper {
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+    /* background-color: rgb(128, 128, 128); */
+}
+
+#todo{
+    font-family: cursive;
+    border: none;
+
+    border-bottom: 1px solid rgb(95, 94, 94);
+    outline: none;
+    padding: 10px;
+    width: 40%;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+
+.taskWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(231, 228, 228);
+    border-radius: 15px;
+    width: 70%;
+    margin: 20px auto;
+    padding: 10px 20px
+}
+
+.task{
+    font-family: cursive;
+    font-size: 25px;
+    color: rgb(34, 34, 34);
+}
+
+.buttons{
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+
+#checked{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+.deleteTask {
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    background: #4676D7;
+    color: #fff;
+    cursor: pointer;
+    font-size: large;
+}
+
+.deleteTask:hover {
+    background-color: rgb(148, 0, 0);
+    color: white;
+}
+
+.active {
+    animation: active 0.3s ease-in-out;
+    background-color: rgb(16, 156, 3);
+    text-decoration: royalblue;
+}
+
+.delete {
+    animation: delete 1s ease-in-out;
+    background-color: red;
+}
+
+@keyframes delete {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes active {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+option {
+    cursor: pointer;
+}
+
+#del {
+    width: 25%;
+    padding: 7px;
+    text-align: center;
+    border: 3px solid blue;
+    cursor: pointer;
+    font-size: 20px;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+ }
+
+ #delete-everything, #showActiveTask,#showAllTask{
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    background: #4676D7;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+
+  #delete-everything:hover,
+  #showActiveTask:hover,
+  #showAllTask:hover {
+    background-color: rgb(148, 0, 0);
+  }
